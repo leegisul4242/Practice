@@ -17,7 +17,9 @@ https://github.com/2022Team4/PracticeFork/tree/master
   - 커밋 메세지 변경
   - 커밋 reset
   
-    $ git reset {option} {되돌아갈 시점의 commit}
+    $ git reset --{option} {내가 헤드를 위치할 멀쩡한 커밋해시id 앞7자리}
+      git log --oneline  로 커밋id확인
+      git reset --hard b59a011
     여기서 사용 가능한 option은 크게 3가지가 있다. 
     1) hard는 파일을 포함해서 모든 히스토리를 싹 날려버린다. 
     2) soft는 히스토리만 삭제하고 파일은 stage 상태 그대로 남겨둔다. 
